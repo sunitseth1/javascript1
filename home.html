@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <form action="">
+   <label for="name">Name</label>
+   <input type="text" name="name" id="name" placeholder="enter name">
+
+    <p id="age">Please enter the age <br>
+   <input type="radio" name="age1" id="age1">
+   <label for="age1">20-30</label><br>
+   <input type="radio" name="age2" id="age2">
+   <label for="age2">30-40</label><br>
+   <input type="radio" name="age3" id="age3">
+   <label for="age3">40-50</label><br><br><br></p>
+   
+   <label for="number">Number</label>
+   <input type="number" name="number" id="number" placeholder="Enter your phone Number"><br><br>
+
+   <label for="email">Email</label>
+   <input type="email" name="email" id="email" placeholder="Enter Your Email"><br><br>
+
+   <label for="pass">PassWord</label>
+   <input type="password" name="pass" id="pass" placeholder="Enter your Password"><br><br>
+
+   <label for="cpass">confirm password</label>
+   <input type="password" name="cpass" id="cpass" placeholder="Enter Your confirm PassWord"><br><br>
+   <button  onclick="clickMe()">Submit</button>
+  </form>
+</body>
+<script>
+   function clickMe(){
+       let name=document.getElementById("name");
+       let age1=document.getElementById("age1").value;
+       let  age2=document.getElementById("age2");
+       let age3=document.getElementById("age3");
+       let number=document.getElementById("number");
+       let email=document.getElementById("email");
+       let pass=document.getElementById("pass");
+       let cpass=document.getElementById("cpass");
+
+       if(name.value==""|| email.value=="" ||pass.value==""){
+           alert("please enter the value")
+       }else{
+
+       }
+
+       
+       if(pass.value != cpass.value){
+           alert("please enter the value")
+       }else{
+           
+       }
+       
+       if(number.value>=9999999999 || number.value<=1000000000){
+           alert("please enter the value")
+       }else{
+           
+       }
+
+   }
+
+   
+</script>
+</html>

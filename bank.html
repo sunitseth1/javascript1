@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="name">Name of account holder</label>
+        <input type="text" name="name" id="name" placeholder="name of the account holder"><br><br>
+
+        <label for="name">ccount no.</label>
+        <input type="text" name="acn" id="acn" placeholder="ccount no."><br><br>
+
+        <label for="name">confirm account no </label>
+        <input type="text" name="cacc" id="cacc" placeholder="confirm account no"><br><br>
+
+        <label for="name">available balance</label>
+        <input type="text" name="acb" id="acb" placeholder="available balance"><br><br>
+
+        <label for="name">amount to be debited</label>
+        <input type="text" name="atbd" id="atbd" placeholder="amount to be debited"><br><br>
+
+        <label for="name">mobile no  </label>
+        <input type="text" name="num" id="num" placeholder="mobile no "><br><br>
+        <button onclick="clickMe()">Submit</button>
+    </form>
+</body>
+<script>
+    function clickMe(){
+    let name=document.getElementById("name");
+       let acnumber=document.getElementById("acn");
+       let cacnumbe=document.getElementById("cacc").value;
+       let balance=document.getElementById("acb").value;
+       let password=document.getElementById("password").value;
+       let atobedabit=document.getElementById("atbd");
+       let mnumber=document.getElementById("num").value;
+
+    //    if (acnumber.value != cacnumbe.value){
+    //      alert("error")
+    //    }else{
+
+    //    }
+    //    if ( balance.value <=acnumber.value){
+    //     alert("error")
+    //    }else{
+    //     // alert("error")
+    //    }
+    if(mnumber.value <8){
+        alert("incorrect")
+      }else{
+        
+      }
+    }
+</script>
+</html>

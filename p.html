@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="india"></p>
+</body>
+<script>
+    fetch("https://api.coindesk.com/v1/bpi/currentprice.json")
+.then((data)=>{
+    return data.json();
+})
+.then((actualdata)=>{
+    console.log(actualdata);
+    const myData= actualdata.bpi[UER];
+    document.getElementById("india").innerHTML=myData.symbol
+
+})
+.cetch((error)=>{
+    console.log(error);
+})
+
+
+// const fetchPromise = fetch("https://ghibliapi.herokuapp.com/people");
+// fetchPromise.then(response => {
+//   return response.json();
+// }).then(people => {
+//   console.log(people);
+// });
+</script>
+</html>

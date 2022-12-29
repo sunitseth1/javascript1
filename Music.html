@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div{
+    position: absolute;
+    top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color:rgb(180, 61, 61);
+   font-size: 200%;
+   font-style: italic;
+ 
+}
+button{
+    position: absolute;
+    top: 100%;
+   left: 40%;
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: rgb(211, 236, 243);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+button:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform:translateX(1px);
+}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Welcome to My Studio</h1>
+        <button id="book" style=" font-style: italic;"  onclick="cli()">Press</button>
+    </div>
+</body>
+<script>
+function cli(){
+    window.open("https://www.w3schools.com");
+}
+</script>
+</html>

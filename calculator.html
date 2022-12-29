@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div>
+    <form name="from">
+        <input type="text" name="answer" id="input"><br>
+
+        <input type="button" id="block" value="7" onclick="from.answer.value +='7' ">
+        <input type="button" id="block" value="8" onclick="from.answer.value +='8' ">
+        <input type="button" id="block" value="9" onclick="from.answer.value +='9' ">
+        <input type="button" id="block" value="*" onclick="from.answer.value +='*' "><br><br>
+
+        <input type="button" id="block" value="4" onclick="from.answer.value +='4' ">
+        <input type="button" id="block" value="5" onclick="from.answer.value +='5' ">
+        <input type="button" id="block" value="6" onclick="from.answer.value +='6' ">
+        <input type="button" id="block" value="-" onclick="from.answer.value +='-' "><br><br>
+
+        <input type="button" id="block" value="1" onclick="from.answer.value +='1' ">
+        <input type="button" id="block" value="2" onclick="from.answer.value +='2' ">
+        <input type="button" id="block" value="3" onclick="from.answer.value +='3' ">
+        <input type="button" id="block" value="+" onclick="from.answer.value +='+' "><br><br>
+
+        <input type = "reset" id="block1" value = "clr" onclick = "clear">
+        <input type="button" id="block" value="0" onclick="from.answer.value +='0'">
+        <input type="button" id="block" value="." onclick="from.answer.value +='.' ">
+        <input type="button" id="block" value="=" onclick="from.answer.value =eval(form.answer.value)">
+             
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!-- 1. name field
+
+2. phone number which only contains number and that too only 10 digits
+
+3. email id that mandatorily contains @ and .
+
+4. password field which accepts alphanumeric characters and should be of minimum 8 length
+
+5. there should be a confirm password field which checks that the entries in the password field is same as in this field or not
+
+6. there should be a radio button to select the gender
+
+7. there should be a drop down menu to select the nationality indian and others
+
+9. there should be a submit button
+
+10. There should be a reset button also -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit=" btn()">
+        <input type="text" name="name" placeholder="Name" id="name"><br><br>
+        <input type="number" placeholder="Number" id="number"><br><br>
+        <input type="text" name="email" placeholder="Email" id="email"><br><br>
+        <input type="text" placeholder="password" name="password" id="password"><br><br>
+        <input type="text" placeholder="confirm password" name="confirmpass"><br><br>
+        <label for="gender">Gender</label>
+        <select  name="option" id="select">
+         <option value="" > </option>
+        <option value="1">Male</option>
+        <option value="2">Female</option>
+      </select><br><br>
+      <label for="gender">nationality</label>
+      <select  name="nationality" id="indian">
+        <option value="" > </option>
+       <option value="1">Indian</option>
+       <option value="2">Others</option>
+     </select><br><br>
+        <button type="submit" onclick="btn()">submit</button>
+        <button type="reset" value="Reset">Reset</button>
+    </form>
+</body>
+<script>
+     function btn (){
+       let name=document.getElementById("name");
+       let number=document.getElementById("number").value;
+       let numbe=document.getElementById("number");
+       let email=document.getElementById("email");
+       let password=document.getElementById("password").value;
+       let cpass=document.getElementById("confirmpass").value;
+       let pass=document.getElementById("password").value;
+       let option=document.getElementById("select");
+       let indian=document.getElementById("indian");
+      //  if(name.value=="" || numbe.value=="" || email.value=="" || password.value==""){
+      //       alert ("Please check the from")
+      //       return false;
+      //  }else{
+      //   true; 
+      //  }
+     
+      // if(number.length <10){
+      //   alert("Please provide a valid number")
+      // }else{
+
+      // }
+      
+      // if(password.length <8){
+      //   alert("incorrect")
+      // }else{
+        
+      // }
+
+  //     if(pass!=cpass){	
+  // 	alert("Passwords did not match");
+  // } else {
+  // 	alert("Password created successfully");
+  // }
+    //   if(indian.value==""){
+    //     alert("alt")
+    //   }
+    //   if(option.value==""){
+    //     alert("alt")
+    //   }
+    //   if( option.value=="" || indian.value==""){
+    //     alert("select the option")
+    //   }
+     }
+</script>
+</html>

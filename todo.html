@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<body>
+	
+	<p href=""><u id="add"> Tasks </u></p>
+	
+<input type='text' id='input'/>
+<input type='button' onclick='addText()' value='Add To List'/>
+
+</body>
+	<script>
+		function addText(){
+    var input = document.getElementById('input').value;
+    var node=document.createElement("p");
+    var textnode=document.createTextNode(input);
+	
+    node.appendChild(textnode);
+    document.getElementById('addTask').appendChild(node);
+
+    var removeTask = document.createElement('a');
+    removeTask.setAttribute('type', 'button');
+    removeTask.setAttributey("value", "Remove");
+    removeTask.setAttribute("id", "removeButton");
+    node.appendChild(removeTask);
+
+}
+	</script>
+</html>
